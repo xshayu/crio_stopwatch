@@ -38,8 +38,7 @@ const Stopwatch: React.FC = () => {
     return (
         <div>
             <h1>Stopwatch</h1>
-            <div>Time</div>
-            <div>{formatTime(time)}</div>
+            <div>Time: {formatTime(time)}</div>
             <div>
                 <button onClick={startStop}>
                     {isRunning ? 'Stop' : 'Start'}
